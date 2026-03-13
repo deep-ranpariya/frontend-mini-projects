@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Frontend Interview Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Theme toggle button top-right -->
+<button id="themeBtn" class="theme-toggle-btn">🌙</button>
+
+<!-- Start Screen -->
+<div id="start-screen" class="quiz-container">
+  <h1>Frontend Quiz</h1>
+  <button id="startBtn">Start Quiz</button>
+</div>
+
+<!-- Countdown -->
+<div id="countdown-screen" class="quiz-container" style="display:none;">
+  <h1 id="countdown-text">3</h1>
+</div>
+
+<!-- Quiz Container -->
+<div id="quiz-container" class="quiz-container" style="display:none;">
+  <div class="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div id="timer">⏱ 15</div>
+
+  <h2 id="question">Loading questions...</h2>
+  <div id="options"></div>
+
+  <button id="nextBtn">Next</button>
+  <div id="score">Score: 0</div>
+  <div id="result"></div>
+  <button id="restartBtn" style="display:none;">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
