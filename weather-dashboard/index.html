@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather Pro Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>🌦</h2>
+
+<div class="nav">
+<div>🏠</div>
+<div onclick="getLocation()">📍</div>
+<div>📅</div>
+<div>⚙</div>
+</div>
+
+<button id="themeBtn">🌙</button>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="topbar">
+
+<input id="city" placeholder="Search Indian city">
+
+<button onclick="getWeather()">Search</button>
+
+</div>
+
+
+<!-- WEATHER CARD -->
+
+<div class="weather-card">
+
+<img id="icon">
+
+<h1 id="temp">--°C</h1>
+
+<p id="desc">Weather</p>
+
+<p id="location">City</p>
+
+</div>
+
+
+<!-- HIGHLIGHTS -->
+
+<div class="highlights">
+
+<div class="card">
+<h3>Wind</h3>
+<p id="wind">-- km/h</p>
+</div>
+
+<div class="card">
+<h3>Humidity</h3>
+<p id="humidity">--%</p>
+</div>
+
+<div class="card">
+<h3>Pressure</h3>
+<p id="pressure">-- hPa</p>
+</div>
+
+<div class="card">
+<h3>Visibility</h3>
+<p id="visibility">-- km</p>
+</div>
+
+</div>
+
+<h2>5 Day Forecast</h2>
+
+<div id="forecast" class="forecast"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
